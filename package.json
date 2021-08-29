@@ -4,12 +4,11 @@
   "description": "dwec2021 ies maria enriuquez",
   "private": "true",
   "scripts": {
-    "test": "jest",
-    "build": "webpack"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iesme-daw2021/99-netlify-fullcourse.git"
+    "url": "git+https://github.com/iesme-daw2021/iesme-daw2021.github.io.git"
   },
   "keywords": [
     "javascript",
@@ -20,9 +19,9 @@
   "author": "Xavi Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iesme-daw2021/99-netlify-fullcourse/issues"
+    "url": "https://github.com/iesme-daw2021/iesme-daw2021.github.io/issues"
   },
-  "homepage": "https://github.com/iesme-daw2021/99-netlify-fullcourse#readme",
+  "homepage": "https://github.com/iesme-daw2021/iesme-daw2021.github.io#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/preset-env": "^7.15.0",
