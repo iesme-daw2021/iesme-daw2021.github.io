@@ -1,0 +1,43 @@
+{
+  "name": "dwec2021",
+  "version": "1.0.0",
+  "description": "dwec2021 ies maria enriuquez",
+  "private": "true",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iesme-daw2021/99-netlify-fullcourse.git"
+  },
+  "keywords": [
+    "javascript",
+    "dwec",
+    "2021",
+    "iesme"
+  ],
+  "author": "Xavi Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iesme-daw2021/99-netlify-fullcourse/issues"
+  },
+  "homepage": "https://github.com/iesme-daw2021/99-netlify-fullcourse#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.1.0",
+    "jest-puppeteer": "^5.0.4",
+    "puppeteer": "^10.2.0",
+    "regenerator-runtime": "^0.13.9",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "setupFilesAfterEnv": [
+      "./test/setupTests.js"
+    ]
+  }
+}
