@@ -1,5 +1,5 @@
-(() => {
-  'use strict';
-  const e = document.createElement('p');
-  (e.innerHTML = 12), document.querySelector('main').appendChild(e);
-})();
+import { sum } from './operations.js';
+
+const paragraf = document.createElement('p');
+paragraf.innerHTML = sum(5, 7);
+document.querySelector('main').appendChild(paragraf);
