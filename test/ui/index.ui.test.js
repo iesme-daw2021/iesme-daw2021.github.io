@@ -12,8 +12,8 @@ describe('Index page elements', () => {
     await expect(page).toMatch('2021 DWEC');
   });
 
-  it('should have a clickable button with Unit 1 text', async () => {
-    await expect(page).toClick('a', { text: 'Unit 1' });
+  it('should have a clickable button with Unit 04 text', async () => {
+    await expect(page).toClick('a', { text: 'Unit 04' });
   });
 });
 
@@ -27,14 +27,14 @@ describe('Navigation from Index Page', () => {
     await page.goto(testUrl);
   });
 
-  it('should navigate to ud1 page after clicking the button', async () => {
+  it('should navigate to Unit 04 page after clicking the button', async () => {
     const [response] = await Promise.all([
       page.waitForNavigation(),
-      page.click('a[href="ud1.html"]'),
+      page.click('a[href="tu04/index.html"]'),
     ]);
 
     const title = await page.title();
-    expect(title).toBe('Unit 1');
+    expect(title).toBe('Unit 04');
   });
 
   /**
