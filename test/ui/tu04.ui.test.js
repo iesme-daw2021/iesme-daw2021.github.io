@@ -1,5 +1,6 @@
 import 'expect-puppeteer';
 
+/** 
 describe('tu04 page', () => {
   beforeAll(async () => {
     await page.goto('https://iesme-daw2021.github.io/tu04/index.html');
@@ -9,3 +10,4 @@ describe('tu04 page', () => {
     await expect(page).toMatchElement('span', { text: 'Guess the number' });
   });
 });
+ */

@@ -16,7 +16,7 @@ describe('Index page elements', () => {
     await expect(page).toClick('a', { text: 'Unit 04' });
   });
 });
-
+/** 
 describe('Navigation from Index Page', () => {
   let page;
   let browser;
@@ -34,22 +34,12 @@ describe('Navigation from Index Page', () => {
     ]);
 
     const title = await page.title();
-    expect(title).toBe('Unit 04');
+    expect(title).toBe('Guess the number');
   });
 
-  /**
-  it('should navigate to ud2 page after clicking the button', async () => {
-    const [response] = await Promise.all([
-      page.waitForNavigation(),
-      page.click('a[href="ud2.html"]'),
-    ]);
-
-    const title = await page.title();
-    expect(title).toBe('Unit 2');
-  });
- */
 
   afterAll(async () => {
     await browser.close();
   });
 });
+ */
