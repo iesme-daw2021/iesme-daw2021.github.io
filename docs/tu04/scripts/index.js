@@ -1,15 +1,20 @@
 'use strict';
 
 let exit, userTry, invalid;
+const minNumber = 1;
+const maxNumber = 100;
 
 do {
   let cont = 0;
-  let secretNum = parseInt(Math.random() * 1000) + 1;
+  let secretNum = parseInt(Math.random() * maxNumber) + minNumber;
   do {
     do {
-      const userInput = prompt('Guess the number between 1 and 1000');
+      const userInput = prompt(
+        `Guess the number between ${minNumber} and ${maxNumber}`
+      );
       userTry = +userInput;
-      invalid = !userTry || userTry <= 0 || userTry > 1000;
+      invalid =
+        !userTry || userTry === 0 || userTry < minNumber || userTry > maxNumber;
       exit = userInput == null;
       !exit && invalid && alert('Invalid number');
     } while (!exit && invalid);
