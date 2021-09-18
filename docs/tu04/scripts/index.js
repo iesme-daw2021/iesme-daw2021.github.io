@@ -30,5 +30,5 @@ do {
   !exit && alert(`You guessed it in ${cont} tries: `);
 } while (!exit && confirm('Do you want to play again?'));
 
-if (exit) console.log('Game cancelled');
-else console.log('Thanks for playing');
+if (exit) console.info('Game cancelled');
+else console.info('Thanks for playing');
