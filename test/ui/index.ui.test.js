@@ -13,10 +13,10 @@ describe('Index page elements', () => {
   });
 
   it('should have a clickable button with Unit 04 text', async () => {
-    await expect(page).toClick('a', { text: 'Unit 04' });
+    await expect(page).toClick('a', { text: 'Unit 0X' });
   });
 });
-/** 
+
 describe('Navigation from Index Page', () => {
   let page;
   let browser;
@@ -27,19 +27,17 @@ describe('Navigation from Index Page', () => {
     await page.goto(testUrl);
   });
 
-  it('should navigate to Unit 04 page after clicking the button', async () => {
+  it('should navigate to Unit 0X page after clicking the button', async () => {
     const [response] = await Promise.all([
       page.waitForNavigation(),
-      page.click('a[href="tu04/index.html"]'),
+      page.click('a[href="tu0X/index.html"]'),
     ]);
 
     const title = await page.title();
-    expect(title).toBe('Guess the number');
+    expect(title).toBe('Unit 0X');
   });
-
 
   afterAll(async () => {
     await browser.close();
   });
 });
- */

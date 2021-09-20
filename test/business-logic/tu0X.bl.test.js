@@ -1,4 +1,5 @@
-const { sum } = require('../../docs/tu0X/scripts/operations');
+//const { sum } = require('../../docs/tu0X/scripts/operations');
+import { sum } from '../../docs/tu0X/scripts/operations';
 
 describe('Unit-0X business logic', function () {
   it('Sum function', function () {
